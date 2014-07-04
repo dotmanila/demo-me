@@ -1,0 +1,5 @@
+/ssd/msb/rcsandbox_5_6_190/node1/stop \
+    && sleep 45 && /ssd/msb/rcsandbox_5_6_190/node1/start \
+    && /ssd/msb/rcsandbox_5_6_190/n1 -e 'start slave' \
+    && /ssd/msb/rcsandbox_5_6_190/n2 -e 'start slave' \
+    && /ssd/msb/rcsandbox_5_6_190/n1 -e 'set global general_log = 1'
