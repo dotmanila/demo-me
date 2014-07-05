@@ -6,7 +6,7 @@ $host_info = false;
 $sql = "CREATE TABLE IF NOT EXISTS test(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY)";
 query_write_mysql($sql, $mysqli);
 
-for($i = 0; $i <= 3; $i++) {
+for($i = 0; $i <= 100; $i++) {
     $mysqli = connect_mysql();
 
     query_write_mysql("INSERT INTO test(id) VALUES (NULL)", $mysqli);
